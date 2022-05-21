@@ -1,15 +1,18 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
+import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
+
 import'./App.scss';
 
 
 function App() {
     return (
-        <div>
-            <h1>Azeno</h1>
-            <Button variant="primary">Button-azeno #1</Button>
-        </div>
-    );
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Link to="/profile">Profile</Link>}/>
+            <Route path="/profile" element={<Link to="/">Home</Link>}/>
+          </Routes>
+        </BrowserRouter>
+      );
 }
 
 export default App;
