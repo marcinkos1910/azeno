@@ -7,7 +7,7 @@ function App() {
     return (
         <div>
             <h1>Azeno</h1>
-            <Button variant="primary">Button #1</Button>
+            <Button variant="primary">Button-azeno #1</Button>
         </div>
     );
 }
