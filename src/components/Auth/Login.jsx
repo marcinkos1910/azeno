@@ -24,7 +24,7 @@ function Login(props) {
     }
 
     return (
-        <Card style={{ width: '18rem' }}>
+        <Card>
             <Card.Body>
                 <Card.Title>Login:</Card.Title>
                     <Form onSubmit={submitForm} className={"d-flex flex-column"}>
