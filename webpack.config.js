@@ -11,6 +11,9 @@ module.exports = {
     devServer: {
         port: 3000,
         historyApiFallback: true,
+        static: {
+            directory: path.join(__dirname, 'public'),
+          },
     },
     // Rules of how webpack will take our files, complie & bundle them for the browser
     module: {
